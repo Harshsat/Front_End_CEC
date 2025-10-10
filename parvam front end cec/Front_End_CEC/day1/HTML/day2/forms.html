@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:antiquewhite;font-family: 'Courier New', Courier, monospace;
+        }
+        form{
+            margin-top: 88px;
+            padding: 87px;
+            background-color:darkseagreen; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        label{
+            color:black;background-color:azure;font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .pass{
+            color: aliceblue;background-color: aqua;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .haha{
+            border: 2px solid blue;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px;
+            
+        }
+        #email{
+            font-size: xx-large;
+        }
+
+
+    </style>
+</head>
+<body>
+     <header>City engineering college</header>
+    <nav>
+        <ul>
+            <li><a href="./forms.html" target="_blanks">Forms</a></li>
+            <li><a href="../day_1/tables.html" target="_blanks">Table</a></li>
+        </ul>
+    </nav>
+    <h1 style="text-align: center; background-color:rgb(95, 99, 99);font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Basic Form</h1>
+    <form action="/submit" method="POST">
+        <div class="haha">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required/><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required/><br><br>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male"/>
+        <label for="femlae">Female</label>
+        <input type="radio" id="female" name="gender" value="female">  
+        <label for="others">Others</label>
+
+        </div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required/><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required/><br><br>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male"/>
+        <label for="femlae">Female</label>
+        <input type="radio" id="female" name="gender" value="female">  
+        <label for="others">Others</label>
+        <input type="radio" id="ot" name="gender" value="others"/><br><br>  
+        <h3>Terms and conditions</h3>
+        <label>
+        <input type="checkbox" name="terms" required/>
+        I agree to the Terms and conditions</label><br><br>
+        <label class="pass" for="department">department</label>
+        <select id="department" name="department">
+            <option value="ise">ISE</option>
+            <option value="cse">CSE</option>
+            <option value="aiml">AIML</option>
+            <option value="eee">EEE</option>
+            <option value="me">ME</option>
+        </select><br><br>
+        <label class="pass" for="password">Password:</label>
+        <input type="password" id="password" name="password" required/><br><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required/><br><br>
+        <textarea for="discription">discription:</textarea><br><br>
+        <label for="video">upload video</label>
+        <input type="file" name="video" id="video" accept="video/*"><br><br>
+        <label for="pdf">upload pdf</label>
+        <input type="file" name="pdf" id="pdf" accept="application/pdf"><br><br>
+        <label for="doc">upload Document</label>
+        <input type="file" name="doc" id="doc" accept="application/doc"><br><br>
+        <label for="rating">Give your rating</label>
+        <input type="range" name="range" id="range" min="0" max="100"/><br><br>
+        <label for="color">colour</label>
+        <input type="color" name="color" id="color"/><br><br>
+        <input type="submit" value="submit"/><br><br>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
